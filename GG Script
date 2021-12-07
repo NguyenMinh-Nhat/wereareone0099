@@ -1,0 +1,816 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Menu = Instance.new("Frame")
+local Folder = Instance.new("Folder")
+local Home = Instance.new("TextButton")
+local Page1 = Instance.new("Frame")
+local Information = Instance.new("TextLabel")
+local Thanksforusingscript = Instance.new("TextLabel")
+local Loading = Instance.new("TextLabel")
+local nothing = Instance.new("TextLabel")
+local AntiAFK = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local LinkDiscord = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Farming = Instance.new("TextButton")
+local Page2 = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local Field = Instance.new("TextLabel")
+local SellectField = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local SellectFieldButton = Instance.new("ScrollingFrame")
+local DandelionField = Instance.new("TextButton")
+local SunflowerField = Instance.new("TextButton")
+local BlueFlowerField = Instance.new("TextButton")
+local MushroomfField = Instance.new("TextButton")
+local CloverField = Instance.new("TextButton")
+local SpiderField = Instance.new("TextButton")
+local BambooField = Instance.new("TextButton")
+local StrawberryField = Instance.new("TextButton")
+local PineappleField = Instance.new("TextButton")
+local CactusField = Instance.new("TextButton")
+local PineTreeForest = Instance.new("TextButton")
+local PumpkinField = Instance.new("TextButton")
+local RoseField = Instance.new("TextButton")
+local MountainTopField = Instance.new("TextButton")
+local CoconutField = Instance.new("TextButton")
+local PerperField = Instance.new("TextButton")
+local StumpField = Instance.new("TextButton")
+local Text = Instance.new("TextLabel")
+local SellectMode = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SellectModeButton = Instance.new("Frame")
+local Walk = Instance.new("TextButton")
+local Tween = Instance.new("TextButton")
+local FastTween = Instance.new("TextButton")
+local Teleport = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
+local Page3 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(0.199493349, 0, 0.196363643, 0)
+Frame.Size = UDim2.new(0, 953, 0, 455)
+
+Menu.Name = "Menu"
+Menu.Parent = Frame
+Menu.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Menu.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Menu.Position = UDim2.new(0, 0, 0.0549450554, 0)
+Menu.Size = UDim2.new(0, 123, 0, 430)
+
+Folder.Parent = Frame
+
+Home.Name = "Home"
+Home.Parent = Folder
+Home.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Home.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Home.Position = UDim2.new(0, 0, 0.0549450554, 0)
+Home.Size = UDim2.new(0, 121, 0, 31)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 21.000
+
+Page1.Name = "Page1"
+Page1.Parent = Folder
+Page1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Page1.BorderColor3 = Color3.fromRGB(160, 160, 160)
+Page1.Position = UDim2.new(0.12906611, 0, 0.0549450554, 0)
+Page1.Selectable = true
+Page1.Size = UDim2.new(0, 830, 0, 430)
+
+Information.Name = "Information"
+Information.Parent = Page1
+Information.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Information.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Information.Position = UDim2.new(0.00842347648, 0, 0, 0)
+Information.Size = UDim2.new(0, 130, 0, 32)
+Information.Font = Enum.Font.SourceSans
+Information.Text = "Information"
+Information.TextColor3 = Color3.fromRGB(255, 255, 255)
+Information.TextSize = 23.000
+
+Thanksforusingscript.Name = "Thanks for using script"
+Thanksforusingscript.Parent = Page1
+Thanksforusingscript.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Thanksforusingscript.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Thanksforusingscript.Position = UDim2.new(0.0108330781, 0, 0.0930232555, 0)
+Thanksforusingscript.Size = UDim2.new(0, 240, 0, 27)
+Thanksforusingscript.Font = Enum.Font.SourceSans
+Thanksforusingscript.Text = "Thanks For Using My Script,"
+Thanksforusingscript.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thanksforusingscript.TextSize = 21.000
+
+Loading.Name = "Loading"
+Loading.Parent = Page1
+Loading.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Loading.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Loading.Position = UDim2.new(0.284325629, 0, 0.0930232555, 0)
+Loading.Size = UDim2.new(0, 112, 0, 27)
+Loading.Font = Enum.Font.SourceSans
+Loading.Text = "..."
+Loading.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextSize = 21.000
+
+nothing.Name = "nothing"
+nothing.Parent = Page1
+nothing.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+nothing.BorderColor3 = Color3.fromRGB(30, 30, 30)
+nothing.Position = UDim2.new(0.00962825958, 0, 0.160465121, 0)
+nothing.Size = UDim2.new(0, 354, 0, 28)
+nothing.Font = Enum.Font.SourceSans
+nothing.Text = "This Script Make By wereareone0099#5593"
+nothing.TextColor3 = Color3.fromRGB(255, 255, 255)
+nothing.TextSize = 21.000
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = Page1
+AntiAFK.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AntiAFK.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AntiAFK.Position = UDim2.new(0.00962825958, 0, 0.232558146, 0)
+AntiAFK.Size = UDim2.new(0, 171, 0, 30)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "AntiAFK:       Active"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.TextSize = 21.000
+
+Version.Name = "Version"
+Version.Parent = Page1
+Version.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Version.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Version.Position = UDim2.new(0.0120379347, 0, 0.290697664, 0)
+Version.Size = UDim2.new(0, 118, 0, 27)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "Version:   ..."
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 21.000
+
+LinkDiscord.Name = "Link Discord"
+LinkDiscord.Parent = Page1
+LinkDiscord.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LinkDiscord.BorderColor3 = Color3.fromRGB(30, 30, 30)
+LinkDiscord.Position = UDim2.new(0.0096282959, 0, 0.416279078, 0)
+LinkDiscord.Size = UDim2.new(0, 129, 0, 28)
+LinkDiscord.Font = Enum.Font.SourceSans
+LinkDiscord.Text = "Link Discord:"
+LinkDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+LinkDiscord.TextSize = 21.000
+
+TextButton.Parent = Page1
+TextButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+TextButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.219927102, 0, 0.430232555, 0)
+TextButton.Size = UDim2.new(0, 226, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Copy"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 22.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = TextButton
+
+Farming.Name = "Farming"
+Farming.Parent = Folder
+Farming.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Farming.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Farming.Position = UDim2.new(0, 0, 0.127472535, 0)
+Farming.Size = UDim2.new(0, 121, 0, 29)
+Farming.Font = Enum.Font.SourceSansBold
+Farming.Text = "Farming"
+Farming.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farming.TextSize = 21.000
+
+Page2.Name = "Page2"
+Page2.Parent = Folder
+Page2.Active = true
+Page2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Page2.BorderColor3 = Color3.fromRGB(160, 160, 160)
+Page2.Position = UDim2.new(0.12906611, 0, 0.0549450554, 0)
+Page2.Size = UDim2.new(0, 829, 0, 430)
+Page2.Visible = false
+Page2.CanvasSize = UDim2.new(0, 0, 3, 0)
+Page2.ScrollBarThickness = 5
+
+TextLabel.Parent = Page2
+TextLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.Position = UDim2.new(0.00965018105, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 84, 0, 36)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Farming"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 23.000
+
+Field.Name = "Field"
+Field.Parent = Page2
+Field.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Field.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Field.Position = UDim2.new(0.01000001, 0, 0, 30)
+Field.Size = UDim2.new(0, 119, 0, 40)
+Field.Font = Enum.Font.SourceSans
+Field.Text = "Sellect Field: "
+Field.TextColor3 = Color3.fromRGB(255, 255, 255)
+Field.TextSize = 21.000
+
+SellectField.Name = "Sellect Field"
+SellectField.Parent = Page2
+SellectField.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+SellectField.BackgroundTransparency = 0.500
+SellectField.BorderColor3 = Color3.fromRGB(30, 30, 30)
+SellectField.Position = UDim2.new(0, 231, 0, 35)
+SellectField.Size = UDim2.new(0, 193, 0, 26)
+SellectField.Font = Enum.Font.SourceSans
+SellectField.Text = "Dandelion Field"
+SellectField.TextColor3 = Color3.fromRGB(255, 255, 255)
+SellectField.TextSize = 18.000
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = SellectField
+
+SellectFieldButton.Name = "SellectFieldButton"
+SellectFieldButton.Parent = Page2
+SellectFieldButton.Active = true
+SellectFieldButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SellectFieldButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+SellectFieldButton.Position = UDim2.new(0, 230, 0, 62)
+SellectFieldButton.Size = UDim2.new(0, 194, 0, 114)
+SellectFieldButton.Visible = false
+SellectFieldButton.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
+SellectFieldButton.ScrollBarThickness = 7
+
+DandelionField.Name = "DandelionField"
+DandelionField.Parent = SellectFieldButton
+DandelionField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DandelionField.BackgroundTransparency = 0.900
+DandelionField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+DandelionField.Size = UDim2.new(0, 195, 0, 30)
+DandelionField.Font = Enum.Font.SourceSans
+DandelionField.Text = "Dandelion Field"
+DandelionField.TextColor3 = Color3.fromRGB(255, 255, 255)
+DandelionField.TextSize = 20.000
+
+SunflowerField.Name = "SunflowerField"
+SunflowerField.Parent = SellectFieldButton
+SunflowerField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SunflowerField.BackgroundTransparency = 0.900
+SunflowerField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+SunflowerField.Position = UDim2.new(0, 0, 0, 30)
+SunflowerField.Size = UDim2.new(0, 195, 0, 30)
+SunflowerField.Font = Enum.Font.SourceSans
+SunflowerField.Text = "Sunflower Field"
+SunflowerField.TextColor3 = Color3.fromRGB(255, 255, 255)
+SunflowerField.TextSize = 20.000
+
+BlueFlowerField.Name = "BlueFlowerField"
+BlueFlowerField.Parent = SellectFieldButton
+BlueFlowerField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BlueFlowerField.BackgroundTransparency = 0.900
+BlueFlowerField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+BlueFlowerField.Position = UDim2.new(0, 0, 0, 90)
+BlueFlowerField.Size = UDim2.new(0, 195, 0, 30)
+BlueFlowerField.Font = Enum.Font.SourceSans
+BlueFlowerField.Text = "Blueflower Field"
+BlueFlowerField.TextColor3 = Color3.fromRGB(255, 255, 255)
+BlueFlowerField.TextSize = 20.000
+
+MushroomfField.Name = "MushroomfField"
+MushroomfField.Parent = SellectFieldButton
+MushroomfField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MushroomfField.BackgroundTransparency = 0.900
+MushroomfField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+MushroomfField.Position = UDim2.new(0, 0, 0, 60)
+MushroomfField.Size = UDim2.new(0, 195, 0, 30)
+MushroomfField.Font = Enum.Font.SourceSans
+MushroomfField.Text = "Mushroom Field"
+MushroomfField.TextColor3 = Color3.fromRGB(255, 255, 255)
+MushroomfField.TextSize = 20.000
+
+CloverField.Name = "CloverField"
+CloverField.Parent = SellectFieldButton
+CloverField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloverField.BackgroundTransparency = 0.900
+CloverField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+CloverField.Position = UDim2.new(0, 0, 0, 120)
+CloverField.Size = UDim2.new(0, 195, 0, 30)
+CloverField.Font = Enum.Font.SourceSans
+CloverField.Text = "Clover Field"
+CloverField.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloverField.TextSize = 20.000
+
+SpiderField.Name = "SpiderField"
+SpiderField.Parent = SellectFieldButton
+SpiderField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpiderField.BackgroundTransparency = 0.900
+SpiderField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+SpiderField.Position = UDim2.new(0, 0, 0, 150)
+SpiderField.Size = UDim2.new(0, 195, 0, 30)
+SpiderField.Font = Enum.Font.SourceSans
+SpiderField.Text = "Spider Field"
+SpiderField.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpiderField.TextSize = 20.000
+
+BambooField.Name = "BambooField"
+BambooField.Parent = SellectFieldButton
+BambooField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BambooField.BackgroundTransparency = 0.900
+BambooField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+BambooField.Position = UDim2.new(0, 0, 0, 180)
+BambooField.Size = UDim2.new(0, 195, 0, 30)
+BambooField.Font = Enum.Font.SourceSans
+BambooField.Text = "Bamboo Field"
+BambooField.TextColor3 = Color3.fromRGB(255, 255, 255)
+BambooField.TextSize = 20.000
+
+StrawberryField.Name = "StrawberryField"
+StrawberryField.Parent = SellectFieldButton
+StrawberryField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrawberryField.BackgroundTransparency = 0.900
+StrawberryField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+StrawberryField.Position = UDim2.new(0, 0, 0, 210)
+StrawberryField.Size = UDim2.new(0, 195, 0, 30)
+StrawberryField.Font = Enum.Font.SourceSans
+StrawberryField.Text = "Strawberry Field"
+StrawberryField.TextColor3 = Color3.fromRGB(255, 255, 255)
+StrawberryField.TextSize = 20.000
+
+PineappleField.Name = "PineappleField"
+PineappleField.Parent = SellectFieldButton
+PineappleField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PineappleField.BackgroundTransparency = 0.900
+PineappleField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+PineappleField.Position = UDim2.new(0, 0, 0, 240)
+PineappleField.Size = UDim2.new(0, 195, 0, 30)
+PineappleField.Font = Enum.Font.SourceSans
+PineappleField.Text = "Pineapple Field"
+PineappleField.TextColor3 = Color3.fromRGB(255, 255, 255)
+PineappleField.TextSize = 20.000
+
+CactusField.Name = "CactusField"
+CactusField.Parent = SellectFieldButton
+CactusField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CactusField.BackgroundTransparency = 0.900
+CactusField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+CactusField.Position = UDim2.new(0, 0, 0, 270)
+CactusField.Size = UDim2.new(0, 195, 0, 30)
+CactusField.Font = Enum.Font.SourceSans
+CactusField.Text = "Cactus Field"
+CactusField.TextColor3 = Color3.fromRGB(255, 255, 255)
+CactusField.TextSize = 20.000
+
+PineTreeForest.Name = "PineTreeForest"
+PineTreeForest.Parent = SellectFieldButton
+PineTreeForest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PineTreeForest.BackgroundTransparency = 0.900
+PineTreeForest.BorderColor3 = Color3.fromRGB(139, 139, 139)
+PineTreeForest.Position = UDim2.new(0, 0, 0, 300)
+PineTreeForest.Size = UDim2.new(0, 195, 0, 30)
+PineTreeForest.Font = Enum.Font.SourceSans
+PineTreeForest.Text = "Pine Tree Forest"
+PineTreeForest.TextColor3 = Color3.fromRGB(255, 255, 255)
+PineTreeForest.TextSize = 20.000
+
+PumpkinField.Name = "PumpkinField"
+PumpkinField.Parent = SellectFieldButton
+PumpkinField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PumpkinField.BackgroundTransparency = 0.900
+PumpkinField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+PumpkinField.Position = UDim2.new(0, 0, 0, 330)
+PumpkinField.Size = UDim2.new(0, 195, 0, 30)
+PumpkinField.Font = Enum.Font.SourceSans
+PumpkinField.Text = "Pumpkin Field"
+PumpkinField.TextColor3 = Color3.fromRGB(255, 255, 255)
+PumpkinField.TextSize = 20.000
+
+RoseField.Name = "RoseField"
+RoseField.Parent = SellectFieldButton
+RoseField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RoseField.BackgroundTransparency = 0.900
+RoseField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+RoseField.Position = UDim2.new(0, 0, 0, 360)
+RoseField.Size = UDim2.new(0, 195, 0, 30)
+RoseField.Font = Enum.Font.SourceSans
+RoseField.Text = "Rose Field"
+RoseField.TextColor3 = Color3.fromRGB(255, 255, 255)
+RoseField.TextSize = 20.000
+
+MountainTopField.Name = "MountainTopField"
+MountainTopField.Parent = SellectFieldButton
+MountainTopField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MountainTopField.BackgroundTransparency = 0.900
+MountainTopField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+MountainTopField.Position = UDim2.new(0, 0, 0, 390)
+MountainTopField.Size = UDim2.new(0, 195, 0, 30)
+MountainTopField.Font = Enum.Font.SourceSans
+MountainTopField.Text = "Mountain Top Field"
+MountainTopField.TextColor3 = Color3.fromRGB(255, 255, 255)
+MountainTopField.TextSize = 20.000
+
+CoconutField.Name = "CoconutField"
+CoconutField.Parent = SellectFieldButton
+CoconutField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoconutField.BackgroundTransparency = 0.900
+CoconutField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+CoconutField.Position = UDim2.new(0, 0, 0, 420)
+CoconutField.Size = UDim2.new(0, 195, 0, 30)
+CoconutField.Font = Enum.Font.SourceSans
+CoconutField.Text = "Coconut Field"
+CoconutField.TextColor3 = Color3.fromRGB(255, 255, 255)
+CoconutField.TextSize = 20.000
+
+PerperField.Name = "PerperField"
+PerperField.Parent = SellectFieldButton
+PerperField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerperField.BackgroundTransparency = 0.900
+PerperField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+PerperField.Position = UDim2.new(0, 0, 0, 450)
+PerperField.Size = UDim2.new(0, 195, 0, 30)
+PerperField.Font = Enum.Font.SourceSans
+PerperField.Text = "Perper Field"
+PerperField.TextColor3 = Color3.fromRGB(255, 255, 255)
+PerperField.TextSize = 20.000
+
+StumpField.Name = "StumpField"
+StumpField.Parent = SellectFieldButton
+StumpField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StumpField.BackgroundTransparency = 0.900
+StumpField.BorderColor3 = Color3.fromRGB(139, 139, 139)
+StumpField.Position = UDim2.new(0, 0, 0, 480)
+StumpField.Size = UDim2.new(0, 195, 0, 30)
+StumpField.Font = Enum.Font.SourceSans
+StumpField.Text = "Stump Field"
+StumpField.TextColor3 = Color3.fromRGB(255, 255, 255)
+StumpField.TextSize = 20.000
+
+Text.Name = "Text"
+Text.Parent = Page2
+Text.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Text.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Text.Position = UDim2.new(0.01000001, 0, 0, 60)
+Text.Size = UDim2.new(0, 123, 0, 40)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "Sellect Mode:"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextSize = 21.000
+
+SellectMode.Name = "SellectMode"
+SellectMode.Parent = Page2
+SellectMode.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+SellectMode.BackgroundTransparency = 0.500
+SellectMode.BorderColor3 = Color3.fromRGB(30, 30, 30)
+SellectMode.Position = UDim2.new(0, 231, 0, 68)
+SellectMode.Size = UDim2.new(0, 193, 0, 26)
+SellectMode.Font = Enum.Font.SourceSans
+SellectMode.Text = "Walk"
+SellectMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+SellectMode.TextSize = 18.000
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = SellectMode
+
+SellectModeButton.Name = "SellectModeButton"
+SellectModeButton.Parent = Page2
+SellectModeButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SellectModeButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+SellectModeButton.Position = UDim2.new(0.280000001, 0, 0, 97)
+SellectModeButton.Size = UDim2.new(0, 192, 0, 153)
+SellectModeButton.Visible = false
+
+Walk.Name = "Walk"
+Walk.Parent = SellectModeButton
+Walk.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Walk.BackgroundTransparency = 0.900
+Walk.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Walk.Size = UDim2.new(0, 191, 0, 33)
+Walk.Font = Enum.Font.SourceSans
+Walk.Text = "Walk"
+Walk.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walk.TextSize = 22.000
+
+Tween.Name = "Tween"
+Tween.Parent = SellectModeButton
+Tween.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Tween.BackgroundTransparency = 0.900
+Tween.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Tween.Position = UDim2.new(0, 0, 0, 30)
+Tween.Size = UDim2.new(0, 191, 0, 33)
+Tween.Font = Enum.Font.SourceSans
+Tween.Text = "Tween"
+Tween.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tween.TextSize = 22.000
+
+FastTween.Name = "FastTween"
+FastTween.Parent = SellectModeButton
+FastTween.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+FastTween.BackgroundTransparency = 0.900
+FastTween.BorderColor3 = Color3.fromRGB(30, 30, 30)
+FastTween.Position = UDim2.new(0, 0, 0, 60)
+FastTween.Size = UDim2.new(0, 191, 0, 33)
+FastTween.Font = Enum.Font.SourceSans
+FastTween.Text = "Fast Tween"
+FastTween.TextColor3 = Color3.fromRGB(255, 255, 255)
+FastTween.TextSize = 22.000
+
+Teleport.Name = "Teleport"
+Teleport.Parent = SellectModeButton
+Teleport.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Teleport.BackgroundTransparency = 0.900
+Teleport.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Teleport.Position = UDim2.new(0, 0, 0, 90)
+Teleport.Size = UDim2.new(0, 191, 0, 33)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 22.000
+
+Combat.Name = "Combat"
+Combat.Parent = Folder
+Combat.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Combat.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Combat.Position = UDim2.new(0, 0, 0.193406597, 0)
+Combat.Size = UDim2.new(0, 121, 0, 32)
+Combat.Font = Enum.Font.SourceSansBold
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextSize = 21.000
+
+Page3.Name = "Page3"
+Page3.Parent = Folder
+Page3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Page3.BorderColor3 = Color3.fromRGB(160, 160, 160)
+Page3.Position = UDim2.new(0.12906611, 0, 0.0549450554, 0)
+Page3.Selectable = true
+Page3.Size = UDim2.new(0, 830, 0, 430)
+Page3.Visible = false
+
+TextLabel_2.Parent = Page3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.Position = UDim2.new(0.00722891558, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 111, 0, 34)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Mods Kill"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 24.000
+
+TextButton_2.Parent = Page3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
+TextButton_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.Position = UDim2.new(0.0228915662, 0, 0.095348835, 0)
+TextButton_2.Size = UDim2.new(0, 192, 0, 22)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Kill Stump Snail"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 22.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = TextButton_2
+
+TextLabel_3.Name = "."
+TextLabel_3.Parent = Folder
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.Position = UDim2.new(0, 0, 0.26593408, 0)
+TextLabel_3.Size = UDim2.new(0, 121, 0, 334)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.TextColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.TextSize = 14.000
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TopBar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.Position = UDim2.new(-0.000926351, 0, 0.0139460638, 0)
+TopBar.Size = UDim2.new(0, 953, 0, 18)
+
+Top.Name = "Top"
+Top.Parent = Frame
+Top.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Top.BorderColor3 = Color3.fromRGB(149, 149, 149)
+Top.Position = UDim2.new(-0.000926351, 0, 0, 0)
+Top.Size = UDim2.new(0, 953, 0, 23)
+Top.Font = Enum.Font.SourceSans
+Top.Text = "Wereareone0099  | Bee Swarm Simulator"
+Top.TextColor3 = Color3.fromRGB(255, 255, 255)
+Top.TextSize = 24.000
+
+-- Scripts:
+
+local function LCZBS_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = true
+		script.Parent.Parent.Page2.Visible = false
+		script.Parent.Parent.Page3.Visible = false
+	end)
+end
+coroutine.wrap(LCZBS_fake_script)()
+local function KQCTK_fake_script() -- Loading.LocalScript 
+	local script = Instance.new('LocalScript', Loading)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(KQCTK_fake_script)()
+local function DZHWFIN_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		setclipboard("https://discord.gg/UHCGztPrSk")
+	end)
+end
+coroutine.wrap(DZHWFIN_fake_script)()
+local function QMQW_fake_script() -- Farming.LocalScript 
+	local script = Instance.new('LocalScript', Farming)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+		script.Parent.Parent.Page3.Visible = false
+	end)
+end
+coroutine.wrap(QMQW_fake_script)()
+local function XTTDIXQ_fake_script() -- SellectField.LocalScript 
+	local script = Instance.new('LocalScript', SellectField)
+
+	local Frame = script.Parent.Parent.SellectFieldButton
+	
+	script.Parent.MouseButton1Down:Connect(function()
+	
+		if Frame.Visible == true then
+		Frame.Visible = false
+	    else
+		Frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(XTTDIXQ_fake_script)()
+local function QGTU_fake_script() -- SellectMode.LocalScript 
+	local script = Instance.new('LocalScript', SellectMode)
+
+	local Frame = script.Parent.Parent.SellectModeButton
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if Frame.Visible == true then
+		Frame.Visible = false
+	    else
+		Frame.Visible = true
+		end
+	end)
+	
+	
+	
+end
+coroutine.wrap(QGTU_fake_script)()
+local function TEAZF_fake_script() -- Combat.LocalScript 
+	local script = Instance.new('LocalScript', Combat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = false
+		script.Parent.Parent.Page2.Visible = false
+		script.Parent.Parent.Page3.Visible = true
+	end)
+end
+coroutine.wrap(TEAZF_fake_script)()
+local function GPTDQA_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			local plr = game.Players.LocalPlayer
+			local char = plr.Character
+	
+			char.HumanoidRootPart.CFrame = CFrame.new(426.264954, 86.4601288, -178.040161, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			wait(0,2)
+		end
+	end)
+end
+coroutine.wrap(GPTDQA_fake_script)()
+local function BIPYWK_fake_script() -- Frame.AntiAFK 
+	local script = Instance.new('LocalScript', Frame)
+
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		print ("Roblox Can't Kick Me :)")
+	end)
+	
+end
+coroutine.wrap(BIPYWK_fake_script)()
+local function UAGYTQ_fake_script() -- Frame.Draggble 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local MainFrame = script.Parent
+	local TopBar = MainFrame:WaitForChild("TopBar")
+	
+	local Camera = workspace:WaitForChild("Camera")
+	
+	local DragMousePosition
+	local FramePosition
+	
+	local Draggable = false
+	
+	TopBar.InputBegan:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		    Draggable = true
+		    DragMousePosition = Vector2.new(input.Position.X, input.Position.Y)
+		    FramePosition = Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
+	    end
+	end)
+	
+	TopBar.InputEnded:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		    Draggable = false
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+	if Draggable == true then
+		local NewPosition = FramePosition + ((Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
+		   MainFrame.Position = UDim2.new(NewPosition.X, 0, NewPosition.Y, 0)
+	    end
+	end)
+end
+coroutine.wrap(UAGYTQ_fake_script)()
+local function RVVW_fake_script() -- Top.LocalScript 
+	local script = Instance.new('LocalScript', Top)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(RVVW_fake_script)()
+local function NNLEZD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+end
+coroutine.wrap(NNLEZD_fake_script)()
